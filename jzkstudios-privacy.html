@@ -199,7 +199,21 @@
         <li><strong>Conservación y borrado:</strong> Los datos se conservan mientras exista la cuenta. Desinstalar la app no borra lo que está en el servidor. Para eliminar tu cuenta sigue los pasos de <a href="tareapp-eliminar-cuenta.html">Eliminar tu cuenta de TareApp</a>.</li>
     </ul>
 
-    <h2>13. Contacto</h2>
+    <h2 id="spos">13. SPOS Punto de venta</h2>
+    <p>Esta sección aplica a la aplicación <strong>SPOS Punto de venta</strong> y complementa las secciones anteriores. Vigente desde el 9 de noviembre de 2026. Contacto: <a href="mailto:jzkstudio8@gmail.com">jzkstudio8@gmail.com</a>.</p>
+    <ul>
+        <li><strong>Qué datos guarda:</strong> lo que capturas para operar tu negocio. Catálogo (productos, precios, categorías y códigos de barras; la app no guarda imágenes de los productos), ventas (tickets, partidas, formas de pago y totales), turnos y cajas (fondo de caja y conteo de efectivo de cada turno) y, si entras con correo y contraseña o con Google, tu correo y el identificador de tu cuenta. La app no guarda nombre ni datos de contacto de tus clientes.</li>
+        <li><strong>Dónde se guardan:</strong> catálogo, ventas y turnos se guardan en tu aparato y también en el servidor (Firestore, de Google Firebase), dentro del espacio de tu cuenta, para que no se pierdan y puedas usar varios aparatos. Esto vale también si usas la app como invitado: tus datos se asocian a una identidad anónima del servidor. La configuración (preferencias de la tienda, impresión y báscula) y el logo de la tienda se guardan solo en tu aparato.</li>
+        <li><strong>Cuenta:</strong> con correo y contraseña, la contraseña se envía a Firebase Authentication (Google), que la guarda y la verifica; la app no la guarda en tu aparato ni en la base de datos de la tienda. Con Google, la app recibe tu identificador de cuenta y tu correo, no tu contraseña de Google. También puedes usar la app como invitado, sin cuenta.</li>
+        <li><strong>Ventas hechas como invitado:</strong> las que no se vinculen a una cuenta quedan en el servidor sin dueño hasta que una limpieza futura las borre. Si quieres conservarlas, vincula tu sesión de invitado a una cuenta de Google. Si prefieres que las borremos, escríbenos a <a href="mailto:jzkstudio8@gmail.com">jzkstudio8@gmail.com</a>.</li>
+        <li><strong>Compras:</strong> los planes de suscripción se compran y cobran a través de Google Play (Google Play Billing). La app no recibe ni guarda tus datos de pago; solo consulta a Google Play si tu suscripción está activa y guarda en tu cuenta el estado del plan (plan, vigencia, producto y el código de la compra). Próximamente, la verificación de las compras se hará también en un servidor (Cloud Functions de Firebase), que consultará a Google Play el estado de tu suscripción con el código de la compra.</li>
+        <li><strong>Cámara:</strong> se usa únicamente para leer códigos de barras. Las imágenes no se guardan ni se envían.</li>
+        <li><strong>Ticket en imagen:</strong> al compartir un ticket, la app genera una imagen PNG temporal en la caché del aparato, que se borra al cerrar sesión.</li>
+        <li><strong>Con quién se comparten:</strong> no vendemos tus datos ni los compartimos con terceros para publicidad, y la app no muestra anuncios. Se procesan en los servicios de Google necesarios para que funcione: Firebase (Authentication y Firestore), Google Play (incluido Google Play Billing) y, si entras con Google, Credential Manager y el inicio de sesión de Google.</li>
+        <li><strong>Tus derechos:</strong> puedes pedir acceso, corrección o borrado de tus datos escribiendo a <a href="mailto:jzkstudio8@gmail.com">jzkstudio8@gmail.com</a>.</li>
+    </ul>
+
+    <h2>14. Contacto</h2>
     <p>Si tienes alguna pregunta o sugerencia sobre nuestra Política de Privacidad, no dudes en contactarnos:</p>
     <div class="contact-box">
         <strong>Jzk Studios</strong><br>
